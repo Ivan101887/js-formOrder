@@ -1,0 +1,184 @@
+@charset "utf-8";
+
+@import "reset";
+
+html {
+  font: {
+    size: 16px;
+    family: "Arial", "Helvetica", "微軟正黑體", "sans-serif";
+  }
+}
+
+.mx {
+  &-auto {
+    margin: {
+      left: auto;
+      right: auto;
+    }
+  }
+}
+
+.mt {
+  &-300 {
+    margin: {
+      top: 300px;
+    }
+  }
+}
+
+.container {
+  max-width: 375px;
+  padding: {
+    left: 5px;
+    right: 5px;
+  }
+}
+
+.js {
+  &-btn {
+    &-hidden {
+      display: none;
+    }
+  }
+}
+
+.text {
+  &-lg {
+    font: {
+      size: 30px;
+    }
+  }
+  &-md {
+    font: {
+      size: 21px;
+    }
+    line-height: 1.5em;
+  }
+  &-bolder {
+    font: {
+      weight: 600;
+    }
+  }
+  &-grey {
+    color: #999;
+  }
+  &-danger {
+    color: #ff0000;
+  }
+  &-success {
+    color:rgb(23, 162, 184)
+  }
+}
+
+.btn{
+  border: {
+    width: 0;
+    radius: 4px;
+  }
+  &:hover {
+    cursor: pointer;
+  }
+  &-info {
+    background: {
+      color: #17a2b8;
+    }
+    color: #fff;
+  }
+  &-lg {
+    width: 100%;
+    margin: {
+      top: 20px;
+      bottom: 20px;
+    }
+    padding: { 
+      top: 6px;
+      bottom: 6px;
+    }
+    font: {
+      size: 22px;
+    }
+  }
+}
+
+.header {
+  background: {
+    color: rgba(23, 162, 184, .9);
+  }
+  &__title {
+    text: {
+      align: center;
+    }
+    padding: {
+      top: 14px;
+      bottom: 14px;
+    }
+    font: {
+      size: 22px;
+      weight: 600;
+    }
+    color: #fff;
+  }
+}
+
+.information {
+  margin: {
+    top: 12px;
+    bottom: 6px;
+  }
+  font: {
+    size: 0.95rem;
+  }
+}
+
+.order {
+  &__item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: {
+      top: 0.53rem;
+      bottom: 0.53rem;
+    } 
+    border: {
+      bottom: 1px solid rgba(204, 204, 204, .8) ;
+    }
+  }
+  &__name {
+    display: inline;
+  }
+  
+  &__amount {
+    width: 70px;
+    height: 30px;
+    box: {
+      sizing: border-box;
+      shadow: 0rem 0rem  4px #cccccc inset;
+    }
+    padding: 5px;
+    text: {
+      align: right;
+    }
+    font: {
+      size: 16px;
+    }
+    border: {
+      radius: 3px;
+      width: 0;
+    }  
+    color: #000;
+  }
+}
+
+.finish {
+  box-sizing: border-box;
+  text-align: center;
+  font-size: 33px;
+  margin: {
+    top: 200px;
+  }
+  padding: {
+    left: 50px;
+    right: 50px;
+  }
+  line-height: 1.25em;
+}
